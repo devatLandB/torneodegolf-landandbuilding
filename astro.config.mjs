@@ -4,5 +4,5 @@ import tailwind from '@astrojs/tailwind';
 // https://astro.build/config
 export default defineConfig({
 	integrations: [tailwind()],
-	base: '/astrotest',
+	site: 'https://torneodegolf.landandbuilding.com',
 });
