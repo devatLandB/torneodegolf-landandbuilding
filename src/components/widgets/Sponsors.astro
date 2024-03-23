@@ -1,3 +1,108 @@
-<div class="container mx-auto m-8 border-red-500 border">
-    <h1 class="w-full text-center uppercase text-5xl font-bold my-8 text-white">Nuestros Patrocinadores</h1>
+---
+import pat_plat_1 from '../../../src/img/PLATINO/GRUPOHERSA.png';
+import pat_oro_1 from '../../../src/img/ORO/CONKAMEX.png';
+import pat_oro_2 from '../../../src/img/ORO/URCONSA.png';
+import pat_oro_3 from '../../../src/img/ORO/MANGODECK.png';
+import pat_oro_4 from '../../../src/img/ORO/YENEKAMU.png';
+import pat_plata_1 from '../../../src/img/PLATA/CABOSTYLE1.png';
+import pat_plata_2 from '../../../src/img/PLATA/REPSOL.png';
+import pat_plata_3 from '../../../src/img/PLATA/ALARCONABOGADOS.png';
+import pat_plata_4 from '../../../src/img/PLATA/INNOVACIONSOLAR.png';
+import pat_hoyo_1 from '../../../src/img/HOYO/CACTUSTOURS.png';
+import pat_hoyo_2 from '../../../src/img/HOYO/ELECTRIFICA.png';
+import pat_hoyo_3 from '../../../src/img/HOYO/MARINACORTEZ.png';
+import pat_hoyo_4 from '../../../src/img/HOYO/METLIFE.png';
+import pat_hoyo_5 from '../../../src/img/HOYO/VHCTRANSPORTE.png';
+---
+
+<div class="container mx-auto m-8">
+    <h1 class="w-full text-center uppercase text-3xl md:text-5xl font-bold py-16 text-white">Nuestros Patrocinadores</h1>
+    <!-- Platino -->
+    <div class="py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2">
+        <div class="h-60 grid   place-items-center  content-center">
+            <img class="w-3/4 max-w-96 h-full object-cover  hover:-0" src={pat_plat_1.src} alt="Grupo Hersa Patrocinador">
+        </div>
+        <div class="h-60 grid   place-items-center content-center">
+            <p class="text-white text-2xl">Disponible!</p>
+            <img class="hidden" src="" alt="am 2">
+        </div>
+    </div>
+    <h2 class="w-full text-center uppercase text-2xl text-white p-4">Platino</h2>
+    </div>
+    <!-- Oro -->
+    <div class="py-16">
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <div class="h-40 grid   place-items-center  content-center">
+                <img class="w-3/4 max-w-96 h-full object-cover  hover:-0" src={pat_oro_1.src} alt="Conkamex patrocinador">
+            </div>
+            <div class="h-40 grid   place-items-center  content-center">
+                <img class="w-3/4 max-w-96 h-full object-cover  hover:-0" src={pat_oro_2.src} alt="am 2">
+            </div>
+            <div class="h-40 grid   place-items-center  content-center">
+                <img class="w-2/4 max-w-96 h-full object-cover  hover:-0" src={pat_oro_3.src} alt="am 1">
+            </div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3">
+            <div class="h-40 grid   place-items-center  content-center">
+                <img class="w-1/3 max-w-96 h-full object-cover  hover:-0" src={pat_oro_4.src} alt="am 3">
+            </div>
+            <div class="h-40 grid   place-items-center  content-center">
+                <p class="text-white text-2xl">Disponible!</p>
+                <img src="" alt="am 2" class="hidden">
+            </div>
+            <div class="h-40 grid   place-items-center  content-center">
+                <img src="" alt="am 3" class="hidden">
+                <p class="text-white text-2xl">Disponible!</p>
+            </div>
+        </div>
+        <h2 class="w-full text-center uppercase text-2xl text-white p-4">Oro</h2>
+    </div>
+    
+    <!-- Plata -->
+    <div class="py-16">
+        <div class="grid grid-cols-2 md:grid-cols-5">
+            <div class="h-28 grid   place-items-center  content-center">
+                <img class="w-1/3 max-w-96 h-full object-cover  hover:-0" src={pat_plata_1.src} alt="am 1">
+            </div>
+            <div class="h-28 grid   place-items-center  content-center">
+                <img class="w-full max-w-96 h-full object-cover  hover:-0" src={pat_plata_2.src} alt="am 2">
+            </div>
+            <div class="h-28 grid   place-items-center  content-center">
+                <img class="w-1/2 max-w-96 h-full object-cover  hover:-0" src={pat_plata_3.src} alt="am 3">
+            </div>
+            <div class="h-28 grid   place-items-center  content-center">
+                <img class="w-full max-w-96 h-full object-cover  hover:-0" src={pat_plata_4.src} alt="am 4">
+            </div>
+            <div class="h-28 grid   place-items-center  content-center">
+                <p class="text-white text-2xl">Disponible!</p>
+                <img class="hidden" src="" alt="am 5">
+            </div>
+        </div>
+        <h2 class="w-full text-center uppercase text-2xl text-white p-4">Plata</h2>
+    </div>
+    
+    <!-- Hoyo -->
+    <div class="py-16">
+        <div class="grid grid-cols-2 md:grid-cols-5">
+            <div class="h-28 grid   place-items-center  content-center">
+                <img class="w-1/2 max-w-96 h-full object-cover  hover:-0" src={pat_hoyo_1.src} alt="am 1">
+            </div>
+            <div class="h-28 grid   place-items-center  content-center">
+                <img class="w-1/2 max-w-96 h-full object-cover  hover:-0" src={pat_hoyo_2.src} alt="am 2">
+            </div>
+            <div class="h-28 grid   place-items-center  content-center">
+                <img class="w-1/3 max-w-96 h-full object-cover  hover:-0" src={pat_hoyo_3.src} alt="am 3">
+            </div>
+            <div class="h-28 grid   place-items-center  content-center">
+                <img class="w-1/2 max-w-96 h-full object-cover  hover:-0" src={pat_hoyo_4.src} alt="am 4">
+            </div>
+            <div class="h-28 grid   place-items-center  content-center">
+                <img class="w-1/2 max-w-96 h-full object-cover  hover:-0" src={pat_hoyo_5.src} alt="am 5">
+            </div>
+        </div>
+        <h2 class="w-full text-center uppercase text-2xl text-white p-4">Hoyo</h2>
+    </div>
+    
+    
 </div>
