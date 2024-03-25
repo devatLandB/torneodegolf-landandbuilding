@@ -13,6 +13,7 @@
     "@astrojs/check": "^0.5.8",
     "@astrojs/mdx": "^2.2.0",
     "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/montserrat": "^5.0.18",
     "@types/canvas-confetti": "^1.6.3",
     "astro": "^4.5.2",
     "autoprefixer": "^10.4.15",
