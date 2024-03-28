@@ -1,3 +1,5 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 module.exports = {
 	content: ['./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}',
 		'./node_modules/flowbite/**/*.js'
@@ -8,9 +10,7 @@ module.exports = {
 				'primary': '#002554',
 			},
 			fontFamily: {
-				'montserrat': ['Montserrat'],
-				'sans-serif': ['Montserrat'],
-				'sans': ['Montserrat'],
+				'montserrat': ['"Montserrat"', ...defaultTheme.fontFamily.sans],
 			},
 		},
 	},
