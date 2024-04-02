@@ -10,8 +10,8 @@ module.exports = {
 				'primary': '#002554',
 			},
 			fontFamily: {
-				'montserrat': ['"Montserrat"', ...defaultTheme.fontFamily.sans],
-			},
+				'sans': ['"Montserrat"', ...defaultTheme.fontFamily.sans],
+			}
 		},
 	},
 	plugins: [
