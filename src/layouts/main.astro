@@ -1,5 +1,6 @@
 ---
 import '../assets/styles/tailwind.css';
+import 'aos/dist/aos.css';
 const { content } = Astro.props;
 ---
 
@@ -16,6 +17,12 @@ const { content } = Astro.props;
 	</head>
 	<body class="antialiased text-default tracking-tight">
 		<slot />
+		<script>
+			import { aosInit } from "../js/aos";
+		
+			// runs on initial page load
+			aosInit();
+		  </script>
 	</body>
 </html>
 <style is:global>

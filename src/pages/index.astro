@@ -14,6 +14,7 @@ import Caboreal from '../components/widgets/Caboreal.astro';
 import Sponsors from '../components/widgets/Sponsors.astro';
 // Component Imports
 import Button from '../components/Button.astro';
+import 'aos/dist/aos.css';
 
 // Full Astro Component Syntax:
 // https://docs.astro.build/basics/astro-components/
@@ -86,5 +87,11 @@ import Button from '../components/Button.astro';
 			</footer>	
 		</div>
 		<script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+		<script>
+			import { aosInit } from "../js/aos";
+		
+			// runs on initial page load
+			aosInit();
+		  </script>
 	</body>
 </html>
