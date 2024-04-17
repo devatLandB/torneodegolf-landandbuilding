@@ -6,8 +6,12 @@ import pat_inst_4 from '../../../src/img/INSTITUCIONALES/croc_white1.svg';
 import pat_inst_5 from '../../../src/img/INSTITUCIONALES/indem_white1-02.svg';
 import logofortem from '../../../src/img/PLATA/logotipo_menu_fortem_white.svg';
 import pat_inst_6 from '../../../src/img/INSTITUCIONALES/pizagolf_white_1.svg';
+import pat_inst_7 from '../../../src/img/INSTITUCIONALES/liceoloscabos_white_1.svg';
+import pat_inst_8 from '../../../src/img/INSTITUCIONALES/luxuryateliers_white_1.svg';
 
 import Linksvg from '../widgets/Linksvg.astro';
+
+import * as instsponsor from '../../content/SponsorInfo/institutionals/institutional-sponsors.md';
 ---
 
 
@@ -16,44 +20,56 @@ import Linksvg from '../widgets/Linksvg.astro';
     <hr class="h-px my-2 bg-gray-200 border-0 dark:bg-gray-700 w-80 mx-auto">
     <div class="grid grid-cols-1 md:grid-cols-3">
         <div class="grid place-items-center content-center" data-aos="zoom-in">
-            <img class="w-3/4 max-w-fit lg:max-w-60 h-full object-cover hover:-0 flex align-middle justify-center" src={pat_inst_1.src} alt="Cabo Real Golf CLub Patrocinador Institucional">
+            <img class="max-w-sm lg:max-w-60 object-contain hover:-0 flex align-middle justify-center" src={pat_inst_1.src} alt={instsponsor.frontmatter.inst1_alt}>
             <div class="w-full text-center flex flex-col align-middle items-center justify-center">
-                <a href="https://questrogolf.com/cabo-real/" target="_blank" class="appearance-none"><Linksvg /></a>
+                <a href={instsponsor.frontmatter.inst1_href} target="_blank" class="appearance-none"><Linksvg /></a>
             </div>
         </div>
         <div class="grid place-items-center content-center" data-aos="zoom-in">
-            <img class="max-w-sm lg:max-w-80 object-conyain hover:-0" src={pat_inst_2.src} alt="Grupo Questro Patrocinador Institucional">
+            <img class="max-w-sm lg:max-w-80 object-contain hover:-0" src={pat_inst_2.src} alt={instsponsor.frontmatter.inst2_alt}>
             <div class="w-full text-center flex flex-col align-middle items-center justify-center">
-                <a href="https://questro.com/index.php/en-us/" target="_blank" class="appearance-none"><Linksvg /></a>
+                <a href={instsponsor.frontmatter.inst2_href} target="_blank" class="appearance-none"><Linksvg /></a>
             </div>
             
         </div>
         <div class="grid place-items-center  content-center" data-aos="zoom-in">
-            <img class="w-3/4 max-w-fit lg:max-w-60 h-full object-cover  hover:-0" src={pat_inst_3.src} alt="BMW Los Cabos Patrocinador Institucional">
+            <img class="w-3/4 max-w-fit lg:max-w-60 h-full object-cover  hover:-0" src={pat_inst_3.src} alt={instsponsor.frontmatter.inst3_alt}>
             <div class="w-full text-center flex flex-col align-middle items-center justify-center">
-                <a href="https://www.bmw.com.mx/es/distribuidores/bmw-los-cabos.html" target="_blank" class="appearance-none"><Linksvg /></a>
+                <a href={instsponsor.frontmatter.inst3_href} target="_blank" class="appearance-none"><Linksvg /></a>
             </div>
         </div>
     </div>
     <!-- -->
-    <div class="grid grid-cols-1 md:grid-cols-3">
+    <div class="grid grid-cols-1 md:grid-cols-5">
         <div class="grid place-items-center content-center" data-aos="zoom-in">
-            <img class="w-3/4 max-w-72 lg:max-w-60 h-full object-cover hover:-0 flex align-middle justify-center" src={pat_inst_4.src} alt="CROC">
+            <img class="w-3/4 max-w-72 lg:max-w-60 h-full object-cover hover:-0 flex align-middle justify-center" src={pat_inst_4.src} alt={instsponsor.frontmatter.inst4_alt}>
             <div class="w-full text-center flex flex-col align-middle items-center justify-center">
-                <a href="https://www.croc.org.mx/" target="_blank" class="appearance-none"><Linksvg /></a>
+                <a href={instsponsor.frontmatter.inst4_href} target="_blank" class="appearance-none"><Linksvg /></a>
             </div>
             
         </div>
         <div class="grid place-items-center content-center" data-aos="zoom-in">
-            <img class="w-3/4 max-w-72 lg:max-w-60 h-full object-cover hover:-0 flex align-middle justify-center" src={pat_inst_5.src} alt="INDEM Los Cabos">
+            <img class="w-3/4 max-w-72 lg:max-w-60 h-full object-cover hover:-0 flex align-middle justify-center" src={pat_inst_5.src} alt={instsponsor.frontmatter.inst5_alt}>
             <div class="w-full text-center flex flex-col align-middle items-center justify-center">
-                <a href="https://indemloscabos.gob.mx/" target="_blank" class="appearance-none"><Linksvg /></a>
+                <a href={instsponsor.frontmatter.inst5_href} target="_blank" class="appearance-none"><Linksvg /></a>
             </div>
         </div>
         <div class="grid place-items-center content-center" data-aos="zoom-in">
-            <img class="w-3/4 max-w-72 lg:max-w-60 h-full object-cover hover:-0 flex align-middle justify-center" src={pat_inst_6.src} alt="">
+            <img class="w-3/4 max-w-72 lg:max-w-60 h-full object-cover hover:-0 flex align-middle justify-center" src={pat_inst_6.src} alt={instsponsor.frontmatter.inst6_alt}>
             <div class="w-full text-center flex flex-col align-middle items-center justify-center">
-            <a href="https://pizagolf.com/" target="_blank" class="appearance-none"><Linksvg /></a>
+            <a href={instsponsor.frontmatter.inst6_href} target="_blank" class="appearance-none"><Linksvg /></a>
+            </div>
+        </div>
+        <div class="grid place-items-center content-center" data-aos="zoom-in">
+            <img class="w-3/4 max-w-72 lg:max-w-60 h-full object-cover hover:-0 flex align-middle justify-center" src={pat_inst_7.src} alt={instsponsor.frontmatter.inst7_alt}>
+            <div class="w-full text-center flex flex-col align-middle items-center justify-center">
+                <a href={instsponsor.frontmatter.inst7_href} target="_blank" class="appearance-none"><Linksvg /></a>
+            </div>
+        </div>
+        <div class="grid place-items-center content-center" data-aos="zoom-in">
+            <img class="w-3/4 max-w-72 lg:max-w-60 h-full object-cover hover:-0 flex align-middle justify-center" src={pat_inst_8.src} alt={instsponsor.frontmatter.inst8_alt}>
+            <div class="w-full text-center flex flex-col align-middle items-center justify-center">
+            <a href={instsponsor.frontmatter.inst8_href} target="_blank" class="appearance-none"><Linksvg /></a>
             </div>
         </div>
     </div>

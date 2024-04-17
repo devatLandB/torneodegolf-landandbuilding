@@ -1,0 +1,59 @@
+---
+import Header from '../components/widgets/Header.astro';
+import Footer from '../components/widgets/Footer.astro';
+import Hero from '../components/widgets/Hero.astro';
+import Paid from '../components/widgets/Paid.astro';
+
+// Component Imports
+
+import 'aos/dist/aos.css';
+
+// Full Astro Component Syntax:
+// https://docs.astro.build/basics/astro-components/
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.ico" />
+		<meta name="generator" content={Astro.generator} />
+		<title>1er Torneo de Golf Land & Building 2024</title>
+		<!-- -->
+		<meta name="author" content="Ko2m0 for Land&Building">
+		<meta name="description" 
+          content="Un exclusivo evento que reúne a destacados desarrolladores inmobiliarios en el impresionante escenario de Cabo San Lucas. Únete a nosotros para una experiencia inolvidable de golf de lujo, networking empresarial y oportunidades de inversión en el paraíso.">
+		  <meta name="keywords" 
+          content="torneo de golf, Land&Building, desarrolladores inmobiliarios, Cabo San Lucas, golf de lujo, networking empresarial, inversiones inmobiliarias, exclusivo evento, golf en México, Robert Trent Jones Jr.">
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+		<!-- -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	</head>
+	<body class="antialiased text-default tracking-tight">
+		<div class="w-full overflow-x-hidden">
+			<header class="container-full bg-primary">
+				<div class="container mx-auto">
+					<Header />
+				</div>
+			</header>
+			<main class="container-full bg-gray-100">
+				<Paid />
+			</main>
+	
+			<footer class="container-full bg-primary">
+				<Footer />
+			</footer>	
+		</div>
+		<script src="../../node_modules/flowbite/dist/flowbite.min.js"></script>
+		<script>
+			import { aosInit } from "../js/aos";
+			// runs on initial page load
+			aosInit();
+		  </script>
+	</body>
+</html>
