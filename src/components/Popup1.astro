@@ -1,3 +1,8 @@
+---
+
+---
+
+
 <!-- Main modal -->
 <div id="timeline-modal" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
     <div class="relative p-4 w-full max-w-lg max-h-full">
@@ -28,6 +33,45 @@
                                 Formulario
                             </button></a>
                         </li>
+                        <li class="mb-10 ms-8">
+                            <h3 class="mb-1 text-lg font-semibold text-gray-900 dark:text-white">Tengo un cup&oacute;n</h3>
+                            <!-- FORM -->
+                            
+                            
+<div class="max-w-sm mx-auto">
+    <div class="mb-5">
+      <label for="validar" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Ingresa tu cup&oacute;n</label>
+      <input name="validarcupon" id="validar1" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="DUHKBTFV" required />
+    </div>
+    <button type="submit" class="validate-btn text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Validar</button>
+</div>
+                            <!-- // -->
+                            <p id="demo"></p>
+
+                            <!-- VALID CODE -->
+                            <div id="valid" class="py-4 hidden">
+                                <div class="flex">
+                                    <svg class="w-6 h-6 text-lime-700 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                        <path fill-rule="evenodd" d="M12 2c-.791 0-1.55.314-2.11.874l-.893.893a.985.985 0 0 1-.696.288H7.04A2.984 2.984 0 0 0 4.055 7.04v1.262a.986.986 0 0 1-.288.696l-.893.893a2.984 2.984 0 0 0 0 4.22l.893.893a.985.985 0 0 1 .288.696v1.262a2.984 2.984 0 0 0 2.984 2.984h1.262c.261 0 .512.104.696.288l.893.893a2.984 2.984 0 0 0 4.22 0l.893-.893a.985.985 0 0 1 .696-.288h1.262a2.984 2.984 0 0 0 2.984-2.984V15.7c0-.261.104-.512.288-.696l.893-.893a2.984 2.984 0 0 0 0-4.22l-.893-.893a.985.985 0 0 1-.288-.696V7.04a2.984 2.984 0 0 0-2.984-2.984h-1.262a.985.985 0 0 1-.696-.288l-.893-.893A2.984 2.984 0 0 0 12 2Zm3.683 7.73a1 1 0 1 0-1.414-1.413l-4.253 4.253-1.277-1.277a1 1 0 0 0-1.415 1.414l1.985 1.984a1 1 0 0 0 1.414 0l4.96-4.96Z" clip-rule="evenodd"/>
+                                      </svg>
+                                      
+                                    <h3 class="mb-1 ml-2 text-lg font-semibold text-gray-900 dark:text-white">Cupón Válido!</h3>
+                                </div>
+                                <a href="https://forms.gle/fMrNGNxFiBd7MMQF9" target="_blank">
+                                <button class="flex items-center text-sm font-medium transition ease-in-out text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 rounded px-16 py-2.5 my-4 ">Inscríbete con descuento </button></a>
+                            </div>
+                            <!-- UNVALID CODE -->
+                            <div id="invalid" class="py-4 hidden">
+                                <div class="inline-flex">
+                                    <svg class="w-6 h-6 text-red-600 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m15 9-6 6m0-6 6 6m6-3a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/>
+                                      </svg>
+                                    <h3 class="mb-1 ml-2 text-lg font-semibold text-gray-900 dark:text-white">Cupón Inválido!</h3>
+                                </div>
+                                <h4 class="block mb-3 text-sm font-normal leading-none text-gray-500 dark:text-gray-400">Int&eacute;ntelo nuevamente</h4>
+                            </div>
+                        </li>
+                        
                         <!-- 
                         <li class="mb-10 ms-8">
                             <span class="absolute flex items-center justify-center w-6 h-6 bg-gray-100 rounded-full -start-3.5 ring-8 ring-white dark:ring-gray-700 dark:bg-gray-600">
@@ -48,3 +92,63 @@
             </div>
     </div>
 </div> 
+
+<script is:inline>
+
+const buttons = document.querySelectorAll('button.validate-btn');
+
+buttons.forEach((button) => {
+    button.addEventListener('click', ()  => {
+       
+        let x = document.getElementById("validar1").value;
+  // If x is Not a Number or less than one or greater than 10
+  
+  if (x == "CLUBSYNC") {
+    document.getElementById("valid").classList.toggle("hidden");
+    document.getElementById("invalid").classList.add("hidden");  
+  } else {
+    document.getElementById("invalid").classList.remove("hidden");
+    document.getElementById("valid").classList.add("hidden");
+  }
+  
+  document.getElementById("valid");
+  
+  
+       
+       /*
+        var element = document.getElementById("valid");
+        element.classList.toggle("hidden");
+        */
+        
+  });
+
+});
+
+
+
+
+  
+ /* const buttons = document.querySelectorAll('button.validate-btn');
+  coupon = "CLUBSYNC"; 
+
+  // Handle clicks on each button.
+
+    buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+       
+    if (coupon[CLUBSYNC] ) {
+        alert('Button was clicked!');
+        document.getElementById("unvalid");
+        element.classList.toggle("hidden");
+        
+    } else {
+        document.getElementById("unvalid");
+        element.classList.toggle("hidden");
+        
+}
+  });
+
+});
+
+*/
+</script>

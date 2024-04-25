@@ -1,0 +1,24 @@
+---
+import { Image } from 'astro:assets';
+import logoClubsync from '../img/CLUBSYNC__logo-header.png';
+---
+
+
+<div class="grid place-items-center content-center py-8 h-screen">
+    <div class="">
+        <div class="container mx-auto max-w-60 lg:max-w-96">
+            <Image src={logoClubsync} alt="Club Sync logo" width="500" height="500"/>
+        </div>
+        <div class="container mx-auto max-w-prose">
+            <h1 class="w-full text-center uppercase text-3xl lg:text-5xl font-medium  text-primary py-8">te ofrece un <span class="font-bold">20% off</span>  en tu inscripción como jugador!</h1>
+            <h1 class="w-full text-center text-2xl lg:text-3xl font-bold  text-primary">No te pierdas esta oportunidad única de jugar en un escenario de lujo a un precio especial.</h1>
+            <h1 class="w-full text-center text-2xl lg:text-3xl font-bold  text-primary py-8">Llena tu formato de inscripci&oacute;n y el link de <span class="uppercase"> pago en l&iacute;nea </span> de <span>Mercado Pago</span> tendrá el descuento aplicado.</h1>
+        </div>
+    </div>
+    <div class="w-full mx-auto grid place-items-center content-center mb-8">
+        <div class="flex flex-wrap gap-4 align-middle justify-center items-center">
+            <a href="https://forms.gle/hhUKiKdqAwxihFeM9"><button type="button" class="my-8 transition ease-in-out text-white bg-primary hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium text-lg px-16 py-2.5 mb-2 uppercase">Reserva tu lugar con descuento</button></a>
+        </div>
+    </div>
+</div>
+
