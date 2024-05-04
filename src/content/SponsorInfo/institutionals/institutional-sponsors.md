@@ -24,6 +24,24 @@ inst7_href: https://www.liceoloscabos.edu.mx/
 inst8_alt: Patrocinador Institucional torneo de golf 2024 Luxury Ateliers
 inst8_href: https://www.luxuryateliers.com/
 
+inst9_alt: Patrocinador Institucional torneo de golf 2024 Tendencia 
+inst9_href: https://tendenciaelartedeviajar.com/
+
+inst10_alt: Patrocinador Institucional torneo de golf 2024 Hospiten
+inst10_href: https://hospiten.com/
+
+inst11_alt: Patrocinador Institucional torneo de golf 2024 Morton Subastas
+inst11_href: https://www.mortonsubastas.com/
+
+inst12_alt: Patrocinador Institucional torneo de golf 2024 La Vikina Café
+inst12_href: https://m.facebook.com/p/La-Vikina-Cabo-Caf%C3%A9-100057853261460/
+
+inst13_alt: Patrocinador Institucional torneo de golf 2024 Diamonds International
+inst13_href: https://www.diamondsinternational.com/
+
+inst14_alt: Patrocinador Institucional torneo de golf 2024 Luxury Ateliers
+inst14_href: https://www.luxuryateliers.com/
+
 
 
 
