@@ -3,6 +3,7 @@ import Countdown from './Countdown.astro';
 import Popup1 from '../Popup1.astro';
 import Popup2 from '../Popup2.astro';
 import Popup3 from '../Popup3.astro';
+import Popupend from '../Popupend.astro';
 ---
 
 <nav class="bg-primary border-gray-200 dark:bg-gray-900">
@@ -15,18 +16,27 @@ import Popup3 from '../Popup3.astro';
       </svg>
   </button>
   <div class="hidden md:flex md:order-2 space-x-3 md:space-x-2 rtl:space-x-reverse">
-      <!-- <a href="https://www.golfgenius.com/pages/10451214695187619055" target="_blank">--><button data-modal-target="timeline-modal" data-modal-toggle="timeline-modal" type="button" class="text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 uppercase">Inscríbete</button><!-- </a>-->
-      <!--<a href="mailto:torneodegolf@landandbuilding.com"> --><button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 uppercase">Patrocinador</button><!-- </a> -->
-      <!--<a href="mailto:torneodegolf@landandbuilding.com"> --><button data-modal-target="subasta-modal" data-modal-toggle="subasta-modal" type="button" class="text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-4 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 uppercase">Subasta</button><!-- </a> -->
+    <!-- -->
+    <button data-modal-target="large-modal" data-modal-toggle="large-modal" type="button" class="text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 uppercase">Gracias!</button>
+    
+      <!-- <button data-modal-target="timeline-modal" data-modal-toggle="timeline-modal" type="button" class="text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 uppercase">Inscríbete</button>
+      <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 uppercase">Patrocinador</button>
+      <button data-modal-target="subasta-modal" data-modal-toggle="subasta-modal" type="button" class="text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mr-4 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 uppercase">Subasta</button>
+      -->
   </div>
   <div class="items-center pt-4 justify-between w-full hidden md:w-auto md:order-1" id="navbar-cta">
-    <!-- <a href="https://www.golfgenius.com/pages/10451214695187619055">--> <button data-modal-target="timeline-modal" data-modal-toggle="timeline-modal" type="button" class="w-full text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Inscríbete</button><!-- </a>-->
-    <!-- <a href="mailto:torneodegolf@landandbuilding.com">--><button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="w-full text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Patrocinador</button><!-- </a>-->      
-    <!-- <a href="mailto:torneodegolf@landandbuilding.com">--><button data-modal-target="subasta-modal" data-modal-toggle="subasta-modal" type="button" class="w-full text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Subasta</button><!-- </a>-->      
+    <button data-modal-target="large-modal" data-modal-toggle="large-modal" type="button" class="w-full text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800 uppercase">Gracias!</button>
+    <!--  <button data-modal-target="timeline-modal" data-modal-toggle="timeline-modal" type="button" class="w-full text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Inscríbete</button>
+    <button data-modal-target="default-modal" data-modal-toggle="default-modal" type="button" class="w-full text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Patrocinador</button>
+    <a href="mailto:torneodegolf@landandbuilding.com"><button data-modal-target="subasta-modal" data-modal-toggle="subasta-modal" type="button" class="w-full text-white hover:text-white border border-white hover:bg-blue-900 focus:ring-4 focus:outline-none focus:ring-gray-300 font-bold rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2 dark:border-gray-600 dark:text-gray-400 dark:hover:text-white dark:hover:bg-gray-600 dark:focus:ring-gray-800">Subasta</button>-->      
   </div>
   </div>
 </nav>
 
+
+
 <Popup1 />
 <Popup2 />
 <Popup3 />
+
+<Popupend />
